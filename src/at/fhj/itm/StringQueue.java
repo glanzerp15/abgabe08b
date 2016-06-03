@@ -16,7 +16,7 @@ public class StringQueue implements Queue {
 	
 	/**
 	 * Constructor.
-	 * @param List to implement the queue.
+	 * @param queueList List to implement the queue.
 	 */
 	public StringQueue(ArrayList<String> queueList) {
 		// TODO Auto-generated constructor stub
