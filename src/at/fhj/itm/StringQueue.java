@@ -14,6 +14,10 @@ public class StringQueue implements Queue {
 	//represent the Queue
 	private ArrayList<String> queueList;
 	
+	/**
+	 * Constructor.
+	 * @param List to implement the queue.
+	 */
 	public StringQueue(ArrayList<String> queueList) {
 		// TODO Auto-generated constructor stub
 		this.queueList = queueList;
@@ -22,9 +26,9 @@ public class StringQueue implements Queue {
 	
 	
 	/**
-	 * Add a string to the queue
+	 * Adds a string to the queue
 	 * @param obj 
-	 * return true if succeeded else return false
+	 * @return true if succeeded, else false
 	 */
 	@Override
 	public boolean offer(String obj) {
@@ -40,6 +44,7 @@ public class StringQueue implements Queue {
 	 * returns the first element in the Queue
 	 * if the queue is emtpy return null
 	 * else return the String element
+	 * @return First element of queue (if empty -> return null).
 	 */
 	@Override
 	public String poll() {
@@ -56,8 +61,9 @@ public class StringQueue implements Queue {
 	}
 
 	/**
-	 * removes and returns the first element of the queue if the queue is empty throw NoSuchElementException
+	 * removes and returns the first element of the queue, if the queue is empty throw NoSuchElementException,
 	 * else remove and return the element.
+	 * @return First element of queue.
 	 */
 	@Override
 	public String remove() {
@@ -72,9 +78,10 @@ public class StringQueue implements Queue {
 	}
 
 	/**
-	 * returns and deletes the first element of the queue 
-	 * if queue is empty return null
-	 * else return the element
+	 * returns and deletes the first element of the queue.
+	 * if queue is empty return null,
+	 * else return the element,
+	 * @return First element of queue.
 	 */
 	@Override
 	public String peek() {
@@ -92,8 +99,9 @@ public class StringQueue implements Queue {
 	
 	/**
 	 * returns the first element of the Queue 
-	 * if queue is empty throw NoSuchElementException
-	 * else return element
+	 * if queue is empty throw NoSuchElementException,
+	 * else return element.
+	 * @return First element of queue if not empty, if emtpy, throw NoSuchElementException
 	 */
 	@Override
 	public String element() {
